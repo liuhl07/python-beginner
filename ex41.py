@@ -48,7 +48,7 @@ def central_corridor():
         print("putting him down, then jump through the Weapon Armory door.")
         return 'laser_weapon_armory'
         
-    else
+    else:
         print("DOES NOT COMPUTE!")
         
 def laser_weapon_armory():
@@ -101,7 +101,7 @@ def the_bridge():
         print("if goes off.")
         return 'death'
         
-    else action == "slowly place the bomb":
+    elif action == "slowly place the bomb":
         print("You point your blaster at the bomb under your arm")
         print("and the Gothons put their hands up and start to sweat.")
         print("You inch backward to the door, open it, and then carefully")
@@ -128,7 +128,7 @@ def escape_pod():
     good_pod = randint(1,5)
     guess = input("[pod #]> ")
     
-    if int(guess) != good_pod
+    if int(guess) != good_pod:
         print("You jump into pod %s and hit the eject button." % guess)
         print("The pod escapes out into the void of space, then")
         print("implodes as the hull ruptures, crushing your body")
